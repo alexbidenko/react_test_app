@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+main {
+  padding: 24px 0;
+}
+
+a, button {
+  outline: none!important;
+  border-width: 0!important;
+}
+.link:hover, .link:hover * {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: none!important;
+}
+.preview {
+  max-width: 125px;
+}
+@media (min-width: 720px) {
+  .preview {
+    max-width: 200px;
+  }
+}
+@media (min-width: 960px) {
+  .preview {
+    max-width: 200px;
+  }
+}
+.MuiTableCell-root {
+  vertical-align: top!important;
+}
+body, html {
+  background: #eee;
+}
+.player-select {
+  width: 160px;
+}
+canvas {
+  position: absolute;
+  z-index: -9999;
+  left: -9999px;
+}
+canvas, .redact-preview {
+  width: 100%;
+  background: no-repeat center / cover black;
+}
+#App {
+  padding: 24px 0;
+}
+.toolbar-horizontal .toolbar-tray {
+  position: absolute!important;
+}
+.converting-process {
+  height: 200px;
+  background: black;
+  position: relative;
+  display: block;
+}
+.converting-process > span {
+  position: absolute;
+  color: white;
+  text-align: center;
+  display: block;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+.page-title {
+  margin: 0;
+  font-size: 2rem;
+}
+.full-fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+.centering-block {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.autocomplete > *:not(p) {
+  position: relative;
+}
+.autocompleteForm .MuiTextField-root + * {
+  max-height: 300px !important;
+  background: white !important;
+  position: absolute !important;
+  z-index: 10;
+  top: 72px !important;
+  left: 0 !important;
+  padding: 8px;
+}
